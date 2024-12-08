@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="pearltrees-domain" content="pearltrees.com">
+<meta name="pearl-import" content="true">
+<meta name="pearl-title" content="Triplet pythagoricien - Énoncé">
+<title>Triplet pythagoricien - Énoncé</title>
+<style>
+body {
+font-family: arial, sans serif;
+}
+a, div.error {
+color: #29506f;
+text-decoration: none;
+}
+img {
+max-width: 100%;
+}
+.medals {
+display: flex;
+}
+.medals div {
+margin-right: 10px;
+}
+.medals div, .medals a {
+font-size: small;
+color: #818181;
+}
+#note-text img {
+display:block;
+}
+@media print{
+@page{
+size: A4 portrait;
+margin: 22mm;
+}
+}
+.blockquote-author + p {
+margin-block-start: 3px;
+}
+iframe {
+border-width: 0px;
+}
+.pearl-title {
+margin-bottom: 10px
+}
+.medals {
+margin-bottom: 30px
+}
+@media not print{
+body {
+display: flex;
+justify-content: center;
+}
+.central-column {
+display: flex;
+justify-content: center;
+width: 900px;
+}
+}
+.medals{display:none;}
+</style>
+<script>
+window.MathJax = { tex: { inlineMath: [["`", "`"], ["\\(", "\\)"]], displayMath: [["\$\$", "\$\$"], ["\\[", "\\]"]] } };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head>
+<body>
+<div class="central-column"><div class="card"><h1  data-pt-skip="true"class="pearl-title">Triplet pythagoricien - Énoncé</h1>
+<div  data-pt-skip="true"class="medals">
+<div class="author-medal"><a href="https://www.pearltrees.com/lagonl" target="_blank">
+Lagonl</a>
+</div>
+<div> – </div><div class="modified-medal">Modifié par Mathsylvie</div>
+<div> – </div><div class="see-medal"><a  data-pt-skip="true"href="https://www.pearltrees.com/private/id84968254/item651832320" target="_blank">
+Voir dans Pearltrees</a>
+</div>
+</div>
+<div id="note-text"><p>Un <b>triplet pythagoricien </b>est un triplet d&#39;entiers 
+<span class="math-tex" style="display:inline-block" data-formula="\((a,b,c)\)"data-width="63" data-height="25">\((a,b,c)\)
+</span>, avec 
+<span class="math-tex" style="display:inline-block" data-formula="\(0<a<b<c\)"data-width="121" data-height="21">\(0<a<b<c\)
+</span> et 
+<span class="math-tex" style="display:inline-block" data-formula="\(a^2+b^2=c^2\)"data-width="109" data-height="23">\(a^2+b^2=c^2\)
+</span>. Ce sont alors les trois côtés entiers d&#39;un triangle rectangle.<br></p>
+<p>
+<span style=" background-color:#d6f6ff;display:inline-block;">Exemples 
+</span><br></p>
+<ul><li>Très utilisé par les maçons, le triplet 
+<span class="math-tex" style="display:inline-block" data-formula="\((3,4,5)\)"data-width="65" data-height="25">\((3,4,5)\)
+</span> est pythagoricien. En effet, on  bien 
+<span class="math-tex" style="display:inline-block" data-formula="\(3^2 + 4^2 = 5^2\)"data-width="111" data-height="24">\(3^2 + 4^2 = 5^2\)
+</span>.<br></li><li>Le triplet 
+<span class="math-tex" style="display:inline-block" data-formula="\((5,12,13)\)"data-width="85" data-height="25">\((5,12,13)\)
+</span> est aussi pythagoricien. En effet, on a bien 
+<span class="math-tex" style="display:inline-block" data-formula="\(5^2 + 12^2 = 13^2\)"data-width="132" data-height="24">\(5^2 + 12^2 = 13^2\)
+</span>.<br></li></ul><p>
+<span style=" background-color:#a0c4ff;display:inline-block;">Problématique
+</span>  Comment dresser la liste des entiers pythagoriciens tels que<br>
+<span class="math-tex" style="display:inline-block" data-formula="\(c<100\)"data-width="67" data-height="21">\(c<100\)
+</span> ?<br></p>
+<p>
+<span style=" background-color:#a0c4ff;display:inline-block;">Partie A
+</span>  Appropriation du problème<br></p>
+<p><b>1.</b> Les triplets 
+<span class="math-tex" style="display:inline-block" data-formula="\((1,2,3)\)"data-width="65" data-height="25">\((1,2,3)\)
+</span> et 
+<span class="math-tex" style="display:inline-block" data-formula="\((6,8,10)\)"data-width="75" data-height="25">\((6,8,10)\)
+</span> sont-ils pythagoriciens ? <br></p>
+<p><b>2. </b>Exécuter le programme de la perle « Triplet pythagoricien - Programme Python
+<span style=" font-size:15px;"> »
+</span>. Qu&#39;affiche-t-il ? <br></p>
+<p><b>3.</b> Paramètrer la valeur de <i>M</i> sur 10 et relancer le code. Que se passe-t-il ?<br></p>
+<p>
+<span style=" background-color:#a0c4ff;display:inline-block;">Partie B
+</span>  Création de la fonction <b>est_Pythagore(a,b,c)</b><br></p>
+<p>On cherche à créer une fonction qui prenne en argument un triplet de valeur 
+<span class="math-tex" style="display:inline-block" data-formula="\((a,b,c)\)"data-width="63" data-height="25">\((a,b,c)\)
+</span> et qui affiche à l&#39;écran « Le triplet {a},{b},{c} est pythagoricien.
+<span style=" font-size:15px;"> » 
+</span>lorsque c&#39;est le cas.<br></p>
+<p><b>1. </b>Rappeler la condition à laquelle un triplet est pythagoricien.<br></p>
+<p><b>2.</b> Traduire cette condition en langage Python.<br></p>
+<p><b>3. </b>Écrire la fonction <b>est_Pythagore(a,b,c)</b>.<br></p>
+<p>
+<span style=" background-color:#a0c4ff;display:inline-block;">Partie C
+</span>  Création du programme complet<br></p>
+<p>À partir du code initial de la console et de votre fonction <b>est_Pythagore</b>, développer un programme qui affiche les premiers entiers pythagoriciens tels que 
+<span class="math-tex" style="display:inline-block" data-formula="\(c<100\)"data-width="67" data-height="21">\(c<100\)
+</span>.</p>
+</div><p>
+<small>Source : <a href="https://lesmanuelslibres.region-academique-idf.fr/" target="_blank">https://lesmanuelslibres.region-academique-idf.fr</a>
+</br>Télécharger le manuel : <a href="https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro" target="_blank">https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro</a> ou directement le <a href="https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro/-/archive/main/mathematiques-seconde-pro-main.zip" target="_blank">fichier ZIP</a>
+</br>Sous réserve des droits de propriété intellectuelle de tiers, les contenus de ce site sont proposés dans le cadre du droit Français sous <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr" rel="noopener external" title="Voir la licence CC BY-NC-SA 4.0 - nouvelle fenêtre" target="_blank">licence CC BY-NC-SA 4.0</small>&nbsp;<a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr" target="_blank"><img class="fr-footer__logo" style="" height="25px" src="https://lesmanuelslibres.region-academique-idf.fr/datas/img/licence.png" alt="Voir la licence CC BY-NC-SA 4.0 - nouvelle fenêtre" /></a>
+</p>
+</div>
+</div>
+</body>
+</html>

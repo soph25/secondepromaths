@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Les différents modes de représentation</title>
+<style>
+body {
+font-family: arial, sans serif;
+}
+a, div.error {
+color: #29506f;
+text-decoration: none;
+}
+img {
+max-width: 100%;
+}
+.medals {
+display: flex;
+}
+.medals div {
+margin-right: 10px;
+}
+.medals div, .medals a {
+font-size: small;
+color: #818181;
+}
+#note-text img {
+display:block;
+}
+@media print{
+@page{
+size: A4 portrait;
+margin: 22mm;
+}
+}
+.blockquote-author + p {
+margin-block-start: 3px;
+}
+iframe {
+border-width: 0px;
+}
+.pearl-title {
+margin-bottom: 10px
+}
+.medals {
+margin-bottom: 30px
+}
+@media not print{
+body {
+display: flex;
+justify-content: center;
+}
+.central-column {
+display: flex;
+justify-content: center;
+width: 900px;
+}
+}
+.medals{display:none;}
+</style>
+<script>
+window.MathJax = { tex: { inlineMath: [["`", "`"], ["\\(", "\\)"]], displayMath: [["\$\$", "\$\$"], ["\\[", "\\]"]] } };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head>
+<body>
+<div class="central-column"><div class="card"><h1  data-pt-skip="true"class="pearl-title">Les différents modes de représentation</h1>
+<div  data-pt-skip="true"class="medals">
+<div class="author-medal"><a href="https://www.geogebra.org/classic/wsmygvjt" target="_blank">
+geogebra.org</a>
+</div>
+<div> – </div><div class="modified-medal">Modifié par Mathsylvie</div>
+<div> – </div><div class="see-medal"><a  data-pt-skip="true"href="https://www.pearltrees.com/private/id84968132/item651831990" target="_blank">
+Voir dans Pearltrees</a>
+</div>
+</div>
+<div id="note-text"><p class='scrap-without-first-image'></p><p>
+<span style=" background-color:#a0c4ff;display:inline-block;">Trois modes de réprésentation d&#39;une fonction
+</span><br></p>
+<p><b>1. </b>Une fonction peut être représentée par sa <b>forme algébrique.</b><br><b>2. </b>Une fonction 
+<span class="math-tex" style="display:inline-block" data-formula="\(f\)"data-width="11" data-height="22">\(f\)
+</span> peut aussi être représentée par une <b>courbe représentative </b><b>
+<span class="math-tex" style="display:inline-block" data-formula="\(C_f\)"data-width="25" data-height="24">\(C_f\)
+</span></b><b> </b>dans un plan 
+<span class="math-tex" style="display:inline-block" data-formula="\((O,i,j)\)"data-width="65" data-height="25">\((O,i,j)\)
+</span>. Cette courbe représentative est<i> </i>l&#39;ensemble des points de coordonnées 
+<span class="math-tex" style="display:inline-block" data-formula="\((x~; f(x))\)"data-width="81" data-height="25">\((x~; f(x))\)
+</span>. Elle peut être tracée à partir d&#39;un outil numérique (calculatrice, logiciel).</p>
+<p>
+<span> 
+</span><b>3. </b>Une fonction peut être représentée par un <b>tableau de valeurs </b>: pour chaque valeur de 
+<span class="math-tex" style="display:inline-block" data-formula="`x`"data-width="12" data-height="20">`x`
+</span>, on note la valeur de l&#39;image correspondante 
+<span class="math-tex" style="display:inline-block" data-formula="`f(x)`"data-width="39" data-height="25">`f(x)`
+</span> dans un tableau.<br>
+<span style=" background-color:#d6f6ff;display:inline-block;">Exemple
+</span><br><img pearltrees="true" id="m_202905" src="data:image/jpeg;charset:utf-8;base64, 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" data-original-url="media%2For%2F651831990%3Fhid%3Dm_202905" data-width="750" data-height="73"></p>
+</div><p>
+<small>Source : <a href="https://lesmanuelslibres.region-academique-idf.fr/" target="_blank">https://lesmanuelslibres.region-academique-idf.fr</a>
+</br>Télécharger le manuel : <a href="https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro" target="_blank">https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro</a> ou directement le <a href="https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro/-/archive/main/mathematiques-seconde-pro-main.zip" target="_blank">fichier ZIP</a>
+</br>Sous réserve des droits de propriété intellectuelle de tiers, les contenus de ce site sont proposés dans le cadre du droit Français sous <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr" rel="noopener external" title="Voir la licence CC BY-NC-SA 4.0 - nouvelle fenêtre" target="_blank">licence CC BY-NC-SA 4.0</small>&nbsp;<a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr" target="_blank"><img class="fr-footer__logo" style="" height="25px" src="https://lesmanuelslibres.region-academique-idf.fr/datas/img/licence.png" alt="Voir la licence CC BY-NC-SA 4.0 - nouvelle fenêtre" /></a>
+</p>
+</div>
+</div>
+</body>
+</html>

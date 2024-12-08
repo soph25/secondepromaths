@@ -1,0 +1,72 @@
+@media screen and (min-width: 900px) {
+    .modal-fullscreen {
+       max-width: 75%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .modal-fullscreen {
+        max-width: 60%;
+    }
+}
+#boutonSommaire{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+iframe{
+    position: absolute;
+}
+
+body {
+    font-family: arial, sans serif;
+}
+#modalSommaire a, div.error {
+    color: #29506f;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.medals {
+    display: flex;
+}
+.medals div {
+    margin-right: 10px;
+}
+.medals div, .medals a {
+    font-size: small;
+    color: #818181;
+}
+#note-text img {
+    display:block;
+}
+@media print{
+    @page{
+        size: A4 portrait;
+        margin: 22mm;
+    }
+}
+.tree-title {
+    margin-bottom: 0px
+}
+.medals {
+    margin-bottom: 15px
+}
+.children {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sub-tree-title{
+    margin-bottom: 10px
+}
+.pearl, .section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.section {
+    line-height: 150%;
+}
+.sub-tree {
+    margin-top: 10px;
+}

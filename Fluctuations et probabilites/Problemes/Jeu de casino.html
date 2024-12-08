@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jeu de casino ***</title>
+<style>
+body {
+font-family: arial, sans serif;
+}
+a, div.error {
+color: #29506f;
+text-decoration: none;
+}
+img {
+max-width: 100%;
+}
+.medals {
+display: flex;
+}
+.medals div {
+margin-right: 10px;
+}
+.medals div, .medals a {
+font-size: small;
+color: #818181;
+}
+#note-text img {
+display:block;
+}
+@media print{
+@page{
+size: A4 portrait;
+margin: 22mm;
+}
+}
+.blockquote-author + p {
+margin-block-start: 3px;
+}
+iframe {
+border-width: 0px;
+}
+.pearl-title {
+margin-bottom: 10px
+}
+.medals {
+margin-bottom: 30px
+}
+@media not print{
+body {
+display: flex;
+justify-content: center;
+}
+.central-column {
+display: flex;
+justify-content: center;
+width: 900px;
+}
+}
+.medals{display:none;}
+</style>
+<script>
+window.MathJax = { tex: { inlineMath: [["`", "`"], ["\\(", "\\)"]], displayMath: [["\$\$", "\$\$"], ["\\[", "\\]"]] } };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head>
+<body>
+<div class="central-column"><div class="card"><h1  data-pt-skip="true"class="pearl-title">Jeu de casino ***</h1>
+<div  data-pt-skip="true"class="medals">
+<div class="author-medal"><a href="https://www.pearltrees.com/mathsylvie" target="_blank">
+Mathsylvie</a>
+</div>
+<div> – </div><div class="modified-medal">Modifié par Mathsylvie</div>
+<div> – </div><div class="see-medal"><a  data-pt-skip="true"href="https://www.pearltrees.com/private/id84968176/item651831822" target="_blank">
+Voir dans Pearltrees</a>
+</div>
+</div>
+<div id="note-text"><p class='scrap-without-first-image'></p><p>Dans un casino, on propose ce jeu de roulette un peu spécial dont voici les règles :<br></p>
+<ul><li>on tire un premier numéro ;<br></li><li>on tire un second numéro ;<br></li><li>on réalise l&#39;opération suivante : le plus grand nombre moins le plus petit ;<br></li><li>si le nombre obtenu est supérieur à 13, on gagne la mise. Sinon, on perd.<br></li></ul><p>
+<span style=" background-color:#d6f6ff;display:inline-block;">Exemples
+</span><br></p>
+<ul><li>Si on tire 34 et 7, la différence fait 27. Or, 27 est supérieur à 13, on gagne donc la partie.<br></li><li>Si on tire 4 et 12, la différence fait 8. Or, 8 est inferieur à 13. On perd.<br></li></ul><p>
+<span style=" background-color:#a0c4ff;display:inline-block;">Problématique
+</span>  Quelle est la probabilité de gagner à ce jeu ?<br></p>
+<p><i>Pour faciliter la recherche, on pourra s&#39;appuyer sur le fichier tableur à télécharger dans cette perle.</i><br><div><a href="./Jeu de casino.xlsx" target="_blank"><img pearltrees="true" id="p_651831822" src="https://cdn-thumbshot-ie.pearltrees.com/39/3d/393de268a5f800f1ee2bee7093fb97e2-wide.jpg" data-filename="Jeu de casino .xlsx" class="file-shadow-border" data-width="620" data-height="370" pearltrees="true" data-embed-type="2" data-embed-url-data="https://www.pearltrees.com/s/file/preview/323569604/Jeu de casino .xlsx.pdf?pearlId=651831822" data-file-preview-url="https%3A%2F%2Fwww.pearltrees.com%2Fs%2Ffile%2Fpreview%2F323569604%2FJeu+de+casino+.xlsx.pdf%3FpearlId%3D651831822" data-office-online-url="https%3A%2F%2Fwww.pearltrees.com%2Fs%2Foffice%2Fview%2F651831822"></a></div></p>
+<p><b>1. </b>Les numéros de la roulette sont répartis entre 0 et 36. À l&#39;aide de la fonction<b> =ALEA.ENTRE.BORNES(min;max)</b>, remplir les cases <b>C3 </b>et <b>C4 </b>afin de simuler une issue d&#39;un lancer de roulette.<br></p>
+<p><b>2.</b> À l&#39;aide de la fonction <b>=ABS()</b> , afficher en <b>E3 </b>la différence entre la plus grande valeur des cases <b>C3:D3</b> et la plus petite.<br></p>
+<p>
+<span style=" background-color:#b3f5bc;display:inline-block;">Aide
+</span><i>  </i><b>=ABS(A2-A1)</b> renvoie la différence entre le plus grand et le plus petit nombre contenus dans <b>A2 </b>et <b>A1</b>.<br></p>
+<p><b>3</b>. À l&#39;aide de la poignée de recopie, simuler 5 000 parties.<br></p>
+<p><b>4. </b>À l&#39;aide de la fonction <b>=NB.SI(critère,plage)</b>, compter le nombre de parties gagnées sur les 5 000.<br></p>
+<p><b>5.</b> En déduire la fréquence observée de parties gagnées.<br></p>
+<p><b>6.</b> Que peut-on dire de la probabilité de gagner à ce jeu ? <br></p>
+<p><b>7.</b> Le jeu est-il rentable pour le casino ? Expliquer votre point de vue.<br></p>
+</div><p>
+<small>Source : <a href="https://lesmanuelslibres.region-academique-idf.fr/" target="_blank">https://lesmanuelslibres.region-academique-idf.fr</a>
+</br>Télécharger le manuel : <a href="https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro" target="_blank">https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro</a> ou directement le <a href="https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro/-/archive/main/mathematiques-seconde-pro-main.zip" target="_blank">fichier ZIP</a>
+</br>Sous réserve des droits de propriété intellectuelle de tiers, les contenus de ce site sont proposés dans le cadre du droit Français sous <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr" rel="noopener external" title="Voir la licence CC BY-NC-SA 4.0 - nouvelle fenêtre" target="_blank">licence CC BY-NC-SA 4.0</small>&nbsp;<a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr" target="_blank"><img class="fr-footer__logo" style="" height="25px" src="https://lesmanuelslibres.region-academique-idf.fr/datas/img/licence.png" alt="Voir la licence CC BY-NC-SA 4.0 - nouvelle fenêtre" /></a>
+</p>
+</div>
+</div>
+</body>
+</html>

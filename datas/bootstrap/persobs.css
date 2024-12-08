@@ -1,0 +1,71 @@
+#logora{
+    height: 90px;
+}
+
+.page{
+    height: 30px;
+}
+
+.pearl.active{
+    background-color: #AAAAAA;
+}
+.pearl.active a{
+    color: white!important;
+    text-decoration: none!important;
+    background-image: none;
+}
+
+.icone{
+    float: left;
+    margin-left: 20px;
+}
+#iframeAffichage{
+    width: 100%;
+}
+
+.medals {
+    display: flex;
+}
+.medals div {
+    margin-right: 10px;
+}
+.medals div, .medals a {
+    font-size: small;
+    color: #818181;
+}
+#note-text img {
+    display:block;
+}
+@media print{
+    @page{
+        size: A4 portrait;
+        margin: 22mm;
+    }
+}
+.tree-title {
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.medals {
+    margin-bottom: 15px
+}
+.children {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sub-tree-title{
+    margin-bottom: 10px
+}
+.pearl, .section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.section {
+    line-height: 150%;
+}
+.sub-tree {
+    margin-top: 10px;
+}
+
+.medals{display:none;}

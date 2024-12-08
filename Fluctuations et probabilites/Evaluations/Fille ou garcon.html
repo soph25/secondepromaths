@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="pearltrees-domain" content="pearltrees.com">
+<meta name="pearl-import" content="true">
+<meta name="pearl-title" content="Fille ou garçon ?">
+<title>Fille ou garçon ?</title>
+<style>
+body {
+font-family: arial, sans serif;
+}
+a, div.error {
+color: #29506f;
+text-decoration: none;
+}
+img {
+max-width: 100%;
+}
+.medals {
+display: flex;
+}
+.medals div {
+margin-right: 10px;
+}
+.medals div, .medals a {
+font-size: small;
+color: #818181;
+}
+#note-text img {
+display:block;
+}
+@media print{
+@page{
+size: A4 portrait;
+margin: 22mm;
+}
+}
+.blockquote-author + p {
+margin-block-start: 3px;
+}
+iframe {
+border-width: 0px;
+}
+.pearl-title {
+margin-bottom: 10px
+}
+.medals {
+margin-bottom: 30px
+}
+@media not print{
+body {
+display: flex;
+justify-content: center;
+}
+.central-column {
+display: flex;
+justify-content: center;
+width: 900px;
+}
+}
+.medals{display:none;}
+</style>
+<script>
+window.MathJax = { tex: { inlineMath: [["`", "`"], ["\\(", "\\)"]], displayMath: [["\$\$", "\$\$"], ["\\[", "\\]"]] } };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head>
+<body>
+<div class="central-column"><div class="card"><h1  data-pt-skip="true"class="pearl-title">Fille ou garçon ?</h1>
+<div  data-pt-skip="true"class="medals">
+<div class="author-medal"><a href="https://www.pearltrees.com/lagonl" target="_blank">
+Lagonl</a>
+</div>
+<div> – </div><div class="modified-medal">Modifié par Mathsylvie</div>
+<div> – </div><div class="see-medal"><a  data-pt-skip="true"href="https://www.pearltrees.com/private/id84968178/item651831836" target="_blank">
+Voir dans Pearltrees</a>
+</div>
+</div>
+<div id="note-text"><p class='scrap-without-first-image'></p><p>On prend au hasard une famille ayant deux enfants. On se demande quelle est la probabilité que cette famille ait une fille et un garçon.<br></p>
+<p>Samantha propose la solution suivante : Une famille est composée :<br></p>
+<ul><li>soit de deux filles ;<br></li><li>soit de deux garçons ;<br></li><li>soit d’une fille et d’un garçon.<br></li></ul><p>La probabilité cherchée serait donc de 1/3.<br></p>
+<p>
+<span style=" background-color:#a0c4ff;display:inline-block;">Problématique
+</span><b>  </b>Samantha a-t-elle raison ?<br></p>
+<p>
+<span style=" background-color:#a0c4ff;display:inline-block;">Partie A
+</span>  Approche probabiliste<br></p>
+<p><b>1. </b>Compléter le tableau des issues possibles.<br></p>
+<p>
+<span class="math-tex" style="display:inline-block" data-formula="\(\begin{array}{|c|c|} \hline\text{Enfant 1\Enfant 2} &\text{Garçon (G)}&\text{Fille (F)} \\ \hline \text{Garçon (G)}&\text{G}-\text{G}&... \\ \hline \text{Fille (F)}&...&... \\ \hline \end{array}\)"data-width="403" data-height="95">\(\begin{array}{|c|c|} \hline\text{Enfant 1\Enfant 2} &\text{Garçon (G)}&\text{Fille (F)} \\ \hline \text{Garçon (G)}&\text{G}-\text{G}&... \\ \hline \text{Fille (F)}&...&... \\ \hline \end{array}\)
+</span><br></p>
+<p><b>2. </b>Calculer la probabilité d&#39;avoir un garçon et un fille.<br></p>
+<p>
+<span style=" background-color:#a0c4ff;display:inline-block;">Partie B
+</span>  Approche fréquentiste<br></p>
+<p>Afin de confirmer les résultats de la partie A, on souhaite simuler 1 000 naissances à l&#39;aide d&#39;un tableur.<br></p>
+<p><i>Télécharger le fichier de la perle suivante ou l&#39;éditer avec Office Online.</i><br></p>
+<p><b>1. </b>Dans le fichier tableur de la perle suivante, générer un nombre aléatoire entre 0 et 1 dans les cases <b>C3 </b>et <b>D3</b>. Dans la suite de l&#39;exercice, on considèrera que 0 correspond à un garçon et 1 à une fille.<br></p>
+<p><b>2. </b>Afficher en <b>E3 </b>la somme de <b>C3</b> et <b>D3</b>.<br></p>
+<p><b>3.</b> Dans le cas où l&#39;on ait 1 garçon et 1 fille, combien doit valoir <b>E3 </b>?<br></p>
+<p><b>4.</b> À l&#39;aide de la poignée de recopie, étendre la simulation pour simuler 1 000 naissances.<br></p>
+<p><b>5.</b> À l&#39;aide de la fonction <b>NB.SI()</b>, dénombrer le nombre de familles ayant 1 garçon et 1 fille.<br></p>
+<p><b>6. </b>Calculer la fréquence des familles ayant eu 1 garçon et 1 fille.<br></p>
+<p><b>7.</b> Cette fréquence est-elle en accord avec la probabilité calculée dans la partie A ? <br></p>
+<p><b>8. </b>Commenter l&#39;affirmation de Samantha.<br></p>
+</div><p>
+<small>Source : <a href="https://lesmanuelslibres.region-academique-idf.fr/" target="_blank">https://lesmanuelslibres.region-academique-idf.fr</a>
+</br>Télécharger le manuel : <a href="https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro" target="_blank">https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro</a> ou directement le <a href="https://forge.apps.education.fr/drane-ile-de-france/les-manuels-libres/mathematiques-seconde-pro/-/archive/main/mathematiques-seconde-pro-main.zip" target="_blank">fichier ZIP</a>
+</br>Sous réserve des droits de propriété intellectuelle de tiers, les contenus de ce site sont proposés dans le cadre du droit Français sous <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr" rel="noopener external" title="Voir la licence CC BY-NC-SA 4.0 - nouvelle fenêtre" target="_blank">licence CC BY-NC-SA 4.0</small>&nbsp;<a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr" target="_blank"><img class="fr-footer__logo" style="" height="25px" src="https://lesmanuelslibres.region-academique-idf.fr/datas/img/licence.png" alt="Voir la licence CC BY-NC-SA 4.0 - nouvelle fenêtre" /></a>
+</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Ce manuel est sous licence Creative Commons : [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.fr) (Attribution - Pas d’utilisation commerciale - Partage dans les mêmes conditions - 4.0 International).
